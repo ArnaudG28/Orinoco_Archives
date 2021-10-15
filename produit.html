@@ -2,7 +2,7 @@
 <html lang="fr">
 <!-- Projet 5 Orinoco OpenClassRooms
 Par Arnaud Ghali
-Version V.1.1 maquettage page index et detail -->
+Version V.1.2 maquettage page panier -->
     <head>
 <!-- En-tête de la page -->
         <meta charset="utf-8" />
@@ -17,7 +17,7 @@ Version V.1.1 maquettage page index et detail -->
 
         <!-- feuille de style -->
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/produit.css">
 
         <!-- bibliotheque icones -->
         <script src="https://kit.fontawesome.com/fd4f7fa464.js" crossorigin="anonymous"></script>
@@ -43,13 +43,13 @@ Version V.1.1 maquettage page index et detail -->
     </header>
         <!-- Fin Header -->
 
-        <!-- Cameras -->
-    <section class="flex-resultat">
-        <article class="vignetteArticle">
+        <!-- Detail Camera -->
+    <section class="flex-detailResultat">
+        <article class="vignetteDetailArticle">
             <form class="formDetailArticle" action="" id="" method="post">
-               <div class="imageArticle">
+               <div class="imageDetailArticle">
                 <img src="./images/vcam_1.jpg" 
-                alt="Photo appareil ancien" class="imageProprieteArticle">
+                alt="Photo appareil ancien" class="imageDetailProprieteArticle">
                </div>
                <div class="actionDetailArticle">
                 <div class="prixDetailArticle">
@@ -74,8 +74,8 @@ Version V.1.1 maquettage page index et detail -->
                       </select>
                     </p>
                 </div>
-                <div class="buttonArticle">
-                    <button class="buttonAjoutArticle">
+                <div class="buttonDetailArticle">
+                    <button class="buttonDetailAjoutArticle">
                         <i class="fas fa-shopping-basket"></i>
                         Ajouter au panier
                     </button>
@@ -84,7 +84,7 @@ Version V.1.1 maquettage page index et detail -->
             </form>
         </article>
     </section>
-        <!-- Fin Cameras -->
+        <!-- Fin Detail Camera -->
 
 
 <!-- Scripts
@@ -95,11 +95,11 @@ Version V.1.1 maquettage page index et detail -->
     <script src="./js/index.js"></script> -->
 
     <!-- Footer --> 
-    <footer class="footerAbsolu">  
+    <footer class="">  
         <div class="footer">
           <div class="footerTableau">
               <a class="footerLien" href="/">Mentions légales</a>
-              <h3 class="footerTitre"><span class="policeH3">Orinoco</span></h3>
+              <h3 class="footerTitre"><a href="./index.html" class="policeH3">Orinoco</a></h3>
                 <a class="footerLien" href="mailto:contact@orinoco.com">Contact</a>
           </div>
         </div>

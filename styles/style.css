@@ -1,5 +1,5 @@
 /* style commun 
-Version V.1.1 maquettage page index et detail */
+Version V.1.2 maquettage page panier */
 
 /* importation des fonts Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -31,9 +31,8 @@ header{
 
 footer{
   background-color: #f2e8f0;
-  bottom: 0; 
   left: 0; 
-  right: 0
+  right: 0;
 }
 
 /* Pour les balises liens de toute la page*/
@@ -58,6 +57,10 @@ img {
   vertical-align: middle;
 }
 
+/* alignement */
+.droite {
+  float: right;
+}
 
 /* Définition des tailles de polices */
 .policeH2 {
@@ -95,7 +98,43 @@ img {
   margin: 5px;
 }
 
+.policePrixPanier{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color:black;
+  margin: 5px;
+}
+
 /* Navigation commun aux pages */
+
+/* Partie navigation */
+.flex-navigation {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+  grid-gap: 0px;
+  width: 100%;
+  background-color: #f2e8f0;
+}
+.logoNavigation {
+  width: 60%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  justify-self: center;
+}
+
+.titreNavigation {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.panierNavigation {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
 
 /* Footer commun aux pages*/
 

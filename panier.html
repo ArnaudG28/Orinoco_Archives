@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<!-- Projet 5 Orinoco OpenClassRooms
+Par Arnaud Ghali
+Version V.1.2 maquettage page panier -->
+    <head>
+<!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+        
+        <meta name="title" content="Orinoco - ventes en ligne d'appareils photos">
+        <meta name="description" content="Orinoco est un site de ventes en ligne d'appareils photos anciens.">
+        
+        <!-- Référencement langage-->
+        <link rel="alternate" hreflang="fr" href="https://arnaudg28.github.io/ArnaudGhali_5_27092021/"/>
+
+        <!-- feuille de style -->
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/panier.css">
+
+        <!-- bibliotheque icones -->
+        <script src="https://kit.fontawesome.com/fd4f7fa464.js" crossorigin="anonymous"></script>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+        <title>Orinoco - votre panier de commande</title>
+
+    </head>
+<!-- Body -->
+<body>
+    <!-- Header -->
+    <header class="flex-navigation">
+        <a class="" href="./index.html"><img src="./images/logo.png" 
+            alt="Logo Orinoco" class="logoNavigation"></a>
+        <h1 class="titreNavigation">
+            <a href="./index.html">Appareils photos vintage</a>
+        </h1>
+        <h2 class="panierNavigation">
+             <a class="" href="./panier.html">Mon panier&nbsp;<i class="fas fa-shopping-basket fa-2x"></i></a>
+        </h2>
+    </header>
+        <!-- Fin Header -->
+
+        <!-- Liste des Cameras -->
+    <section class="flex-panierResultat">
+        <article class="vignetteListePanier">
+            <div class="recapitulatifPanier">
+              <div class="titrerecapitulatifPanier">
+                <h2 class="policeH2">Panier</h>
+              </div>
+              <div class="nombrePanier">
+                <h2 class="policeH2">(1)</h>
+              </div>
+            </div>
+            <div class="listePanier" id="">
+                <div class="imageProduit">
+                    <img src="./images/vcam_1.jpg" 
+                    alt="Photo appareil ancien" class="imageProprieteProduit">
+                </div>
+                <div class="resumeProduit">
+                    <div class="nomProduit">
+                        <p class="policeParagraphe">
+                          <strong>Zurss 50S</strong>
+                        </p>
+                        <p class="policeParagraphe2">
+                          35mm 1.4
+                        </p>
+                    </div>
+                    <div class="prixProduit">
+                      <p class="policePrixPanier"><strong>4999 €</strong></p>
+                      <span class="droite">
+                        <select name="listeNombreProbuit" id="" class="choixNombreProbuit">
+                          <option value="1" selected>1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                      </span>
+                      <p class="buttonSupprimer">
+                        <button class="buttonSupprimerProduit">
+                          Supprimer
+                        </button>
+                      </p>
+                    </div>
+                </div>
+              </div>
+        </article>
+        <!-- Fin Liste des Cameras -->
+        <!-- Recapitulatif commande --> 
+        <article class="vignetteCommande" id="">
+            <!-- grid item, containing a card -->
+            <div>
+              <div class="recapitulatifCommande">
+                <h2 class="policeH2">Récapitulatif</h2>
+              </div>
+              <div class="titreCommande">
+                <h2 class="policeH2">Panier&nbsp;<span class="texteMediumCommande">(4)</span>&nbsp;<span class="">4999 €</span></h2>
+              </div>
+              <div class="titreFrais">
+                <h2 class="policeH3">Frais de livraison</h2>
+              </div>
+              <div class="titreTotal">
+                <h2 class="policeH2">TOTAL <span class="texteMediumCommande">(tva incluse)</span></h2>
+              </div>
+            </div>
+            <div>
+              <div class="recapitulatifCommande">
+                <h2 class="policeH2">&nbsp;</h2>
+              </div>
+              <div class="titreCommande">
+                <h2 class="policeH2"><span class="">4999 €</span></h2>
+              </div>
+              <div class="titreFrais">
+                <h2 class="policeH3"><span>Gratuit</span>
+              </div>
+              <div class="titreTotal">
+                <h2 class="policeH2"><span>10 000 €</span></h2>
+              </div>
+            </div>
+        </article>
+    </section>
+        <!-- Fin Recapitulatif commande -->
+
+        <!-- Formulaire de commande -->
+        <section class="flex-commande">
+              <form class="formCommande" action="" id="" method="post">        
+              </form>
+        </section> 
+        <!-- Fin Formulaire de commande -->
+
+<!-- Scripts
+<section class="mx-3">
+    <div class="row mx-3 my-4" id="liste">
+    </div>
+</section>
+    <script src="./js/index.js"></script> -->
+
+    <!-- Footer --> 
+    <footer class="">  
+        <div class="footer">
+          <div class="footerTableau">
+              <a class="footerLien" href="/">Mentions légales</a>
+              <h3 class="footerTitre"><a href="./index.html" class="policeH3">Orinoco</a></h3>
+                <a class="footerLien" href="mailto:contact@orinoco.com">Contact</a>
+          </div>
+        </div>
+    </footer>   
+            <!-- Fin Footer -->     
+</body>
+</html>

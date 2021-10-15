@@ -5,10 +5,12 @@ Feuille de style pour le projet 5 Orinoco
 Par Arnaud Ghali
 Version V.1.2 maquettage page panier */ 
 
-/* Partie resultat*/
 
-/* enveloppe la liste des appareils */
-.flex-resultat{
+
+/* Partie detail resultat*/
+
+/* enveloppe detail de l'appareil */
+.flex-detailResultat{
   display:flex;
   flex-direction: column;
   flex-wrap:wrap;
@@ -18,8 +20,8 @@ Version V.1.2 maquettage page panier */
   justify-content:space-between;
 }
 
-/* Grid vignette Camera*/
-.vignetteArticle{ 
+/* vignette Camera*/
+.vignetteDetailArticle{ 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -32,109 +34,6 @@ Version V.1.2 maquettage page panier */
   margin-top: 1%;
   margin-bottom: 1%;
 }
-
-/* Article camera */
-.formArticle {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-  background: white;
-  text-decoration: none;
-  color: #444;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  min-height: 100%;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  position: relative;
-  top: 0;
-  padding:0;  
-}
-
-/* Elements camera */
-/* image camera */
-.imageArticle {
-  display:flex;
-  justify-content: center;
-  position: relative;
-  text-align: center;
-  align-items: center;
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.imageProprieteArticle {
-height: auto;
-max-width: 100%;
-border-bottom-right-radius: 5px;
-border-bottom-left-radius: 5px;
-border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-/* rempli le contenu dans la dimension*/
-object-fit: cover;
-}
-
-.descriptionArticle {
-  display:flex;
-  flex-direction: column;
-  flex-wrap:nowrap;
-  padding-top: 25px;
-}
-
-/* prix et action camera */
-.actionArticle {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5px;
-}
-
-.prixArticle {
-  display:flex;
-  flex-direction: column;
-  text-align: right;
-  padding-right: 25px;
-  padding-top: 25px;
-}
-
-.buttonArticle {
-  align-self: center;
-  border: 1px solid transparent;
-
-}
-
-.buttonAjoutArticle {
-  background-color:#f5b027;
-  width: 100%;
-  position: relative;
-  box-sizing: border-box;
-  cursor: pointer;
-  overflow: hidden;
-  text-align: center;
-  border: 1px solid transparent;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 5px;
-  line-height:30px;
-  margin: 0;
-  vertical-align: middle;
-  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-}
-
-/* animation sur les boutons - au survol */
-.buttonAjoutArticle:hover {
-      top: -2px;
-      box-shadow: 4px 4px 6px #000;
-      background-color:orange;
-    }
-
 
 /* details produit */
 .formDetailArticle {
@@ -154,6 +53,30 @@ object-fit: cover;
   position: relative;
   top: 0;
   padding:0;  
+}
+
+/* image camera */
+.imageDetailArticle{
+  display:flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.imageDetailProprieteArticle{
+height: auto;
+max-width: 100%;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+/* rempli le contenu dans la dimension*/
+object-fit: cover;
 }
 
 .descriptionDetailArticle {
@@ -209,6 +132,40 @@ object-fit: cover;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
+
+.buttonDetailArticle{
+  align-self: center;
+  border: 1px solid transparent;
+
+}
+
+.buttonDetailAjoutArticle{
+  background-color:#f5b027;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid transparent;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  line-height:30px;
+  margin: 0;
+  vertical-align: middle;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+/* animation sur les boutons - au survol */
+.buttonDetailArticle:hover {
+      top: -2px;
+      box-shadow: 4px 4px 6px #000;
+      background-color:orange;
+    }
 
 /*Definition pour les responsives */
 /* Pour les ecrans type portable*/
