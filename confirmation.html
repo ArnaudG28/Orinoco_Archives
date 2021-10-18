@@ -17,18 +17,18 @@ Version V.1.3 maquettage page panier et confirmation -->
 
         <!-- feuille de style -->
         <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <link rel="stylesheet" type="text/css" href="styles/produit.css">
+        <link rel="stylesheet" type="text/css" href="styles/confirmation.css">
 
         <!-- bibliotheque icones -->
         <script src="https://kit.fontawesome.com/fd4f7fa464.js" crossorigin="anonymous"></script>
-
+        
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
         <!-- Bibliothèques javascript -->
         <script src="./js/fonctions.js"></script>
 
-        <title>Orinoco - votre produit d'appareil photo en détail</title>
+        <title>Orinoco - confirmation de votre commande</title>
 
     </head>
 <!-- Body -->
@@ -46,52 +46,25 @@ Version V.1.3 maquettage page panier et confirmation -->
     </header>
         <!-- Fin Header -->
 
-        <!-- Detail Camera -->
-    <section class="flex-detailResultat">
-        <article class="vignetteDetailArticle">
-            <form class="formDetailArticle" id="formDetailArticle" method="post">
-               <div class="imageDetailArticle">
-                <img src="./images/vcam_1.jpg" 
-                alt="Photo appareil ancien" class="imageDetailProprieteArticle">
-               </div>
-               <div class="actionDetailArticle">
-                <div class="prixDetailArticle">
-                  <p class="policePrix"><strong>4999 €</strong>
-                  </p>
-                </div>
-                <div class="descriptionDetailArticle">
-                    <p class="policeParagraphe">
-                      <strong>Zurss 50S</strong>
-                    </p>
-                    <p class="policeParagraphe2">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-                <div class="modeleArticle">
-                    <label for="listeModele" class="libelleChoixModeleArticle" >Modèle :</label>
-                    <p>
-                      <select name="listeModele" id="listeModele" class="choixModeleArticle">
-                          <option value="" selected>--Choisissez un modèle--</option>
-                          <option value="35mm">35mm 1.4</option>
-                          <option value="50mm">50mm 1.6</option>
-                      </select>
-                    </p>
-                </div>
-                <div class="buttonDetailArticle">
-                    <button class="buttonDetailAjoutArticle" onclick="pagePanier();">
-                        <i class="fas fa-shopping-basket"></i>
-                        Ajouter au panier
-                    </button>
-                </div>
+        <!-- Confirmation commande -->
+    <section class="flex-confirmationCommande">
+        <!-- Message confirmation commande --> 
+        <article class="vignetteConfirmationCommande" id="vignetteConfirmationCommande">
+            <!-- grid item, containing a card -->
+              <div class="">
+                <h2 class="policeH2">Félicitation, votre commande a bien été prise en compte</h2>
               </div>
-            </form>
+              <div class="">
+                <button class="buttonRetourAccueil" onclick="pageAccueil();">
+                    Retourner à l'accueil
+                </button>
+              </div>
         </article>
     </section>
-        <!-- Fin Detail Camera -->
-
+        <!-- Fin Confirmation commande -->
 
 <!-- Scripts
-    <script src="./js/index.js"></script> -->
+<script src="./js/index.js"></script> -->
 
     <!-- Footer --> 
     <footer class="">  
